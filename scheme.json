@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "word": {
+      "type": "string"
+    },
+    "playerMoves": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "player": {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "role",
+                "name"
+              ]
+            },
+            "information": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "player",
+            "information"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "player": {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "role",
+                "name"
+              ]
+            },
+            "information": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "player",
+            "information"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "player": {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "role",
+                "name"
+              ]
+            },
+            "information": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "player",
+            "information"
+          ]
+        }
+      ]
+    },
+    "wisher": {
+      "type": "object",
+      "properties": {
+        "role": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "role",
+        "name"
+      ]
+    },
+    "guesser": {
+      "type": "object",
+      "properties": {
+        "role": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "role",
+        "name"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "word",
+    "wisher",
+    "guesser"
+  ]
+}
